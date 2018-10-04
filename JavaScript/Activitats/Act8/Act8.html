@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var d, m, y;
+        d = prompt("Introduce el dia");
+        m = prompt("Introduce el mes");
+        y = prompt("Introduce el año");
+        d = parseInt(d);
+        m = parseInt(m);
+        y = parseInt(y);
+        if (d == 24 && m == 12) {
+            document.write("Hoy es navidad <br>")
+        }
+        d = prompt("Introduce un numero");
+        m = prompt("Introduce un numero");
+        y = prompt("Introduce un numero");
+        d = parseInt(d);
+        m = parseInt(m);
+        y = parseInt(y);
+        if (d < 10 && m < 10 && y < 10) {
+            document.write("Todos los numeros son menores que 10 <br>");
+        }
+        d = prompt("Introduce un numero");
+        d = prompt("Introduce un numero");
+        m = prompt("Introduce un numero");
+        d = parseInt(d);
+        m = parseInt(m);
+        if (d > 0 && m > 0) {
+            document.write("Primer Cuadrante <br>");
+        } else if (d < 0 && m > 0) {
+            document.write("Segundo Cuadrante <br>");
+        } else if (d < 0 && m < 0) {
+            document.write("Tercer Cuadrante <br>");
+        } else if (d > 0 && m < 0) {
+            document.write("Cuarto Cuadrante <br>");
+        }
+        d = prompt("Introduce un salario");
+        m = prompt("Introduce un salario");
+        d = parseInt(d);
+        m = parseInt(m);
+        if (d < 500 & m >= 10) {
+            d += (500 * 0.2);
+            document.write("Next salary " + d);
+        } else if (d < 500 & m < 10) {
+            d += (500 * 0.02);
+            document.write("Next salary " + d);
+        } else if (d >= 500) {
+            document.write("Next salary " + d);
+        }
+    </script>
+</body>
+
+</html>

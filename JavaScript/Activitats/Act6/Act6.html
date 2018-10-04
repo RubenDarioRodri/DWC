@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var age;
+        var n1, n2;
+        var m1, m2, m3;
+        var p;
+        n1 = prompt("Introduce un numero");
+        n2 = prompt("Introduce un numero");
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        if (n1 > n2) {
+            document.write(n1 + n2 + "<br>");
+        } else {
+            document.write(n2 - n1 + "<br>");
+        }
+        m1 = prompt("Introduce un numero");
+        m2 = prompt("Introduce un numero");
+        m3 = prompt("Introduce un numero");
+        avg = ((parseInt(m1) + parseInt(m2) + parseInt(m3)) / 3);
+        if (avg >= 5) {
+            document.write("Has aprobado <br>");
+        } else {
+            document.write("Has suspendido <br>");
+        }
+        p = prompt("Introcue un numero");
+        if (p % 2 == 0) {
+            document.write("Es par <br>")
+        } else {
+            document.write("Es impar <br>")
+        }
+        age = prompt("Introcue un edad");
+        if (age > 18 && age < 65) {
+            document.write("Edad de trabajo")
+        } else {
+            document.write("No estas en edad de trabajo")
+        }
+    </script>
+</body>
+
+</html>

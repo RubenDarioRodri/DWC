@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var num;
+        var age;
+        var student = "Juan";
+        var notas = [3, 5, 9];
+        var media;
+        var sum = notas[0] + notas[1] + notas[2];
+        var email, email1;
+        media = sum / notas.length;
+        document.write("La media de Juan es " + media);
+        if (media >= 5) {
+            document.write(" esta APROBADO <br>");
+        } else {
+            document.write(" esta SUSPENDIDO <br>");
+        }
+        email = prompt("Introduce un email:", "");
+        email1 = prompt("Repita el email:", "");
+        if (email == email1) {
+            document.write("El email coincide <br>");
+        } else {
+            document.write("El email no coinciden <br>");
+        }
+        age=prompt("Introduce una edad:","");
+        if (18<age && age>65) {
+            document.write("Estas en edad de trabajar <br>")
+        }else{
+            document.write("Estas fuera de la edad de trabajo <br><br")
+        }
+        num=prompt("Introduce un numero:","");
+        if (num%2==0) {
+            document.write("Es par <br>")
+        }else{
+            document.write("Es impar <br>")
+        }
+    </script>
+</body>
+
+</html>

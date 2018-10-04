@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var n = 1;
+        while (n <= 50) {
+            document.write(n + " ");
+            n++;
+            if (n > 50) {
+                document.write("<br><br>");
+                while (n >= 1) {
+                    n--;
+                    document.write(n + " ");
+                }
+                document.write("<br><br>");
+                n = -50;
+                while (n <= 0) {
+                    document.write(n + " ");
+                    n++;
+                }
+                document.write("<br><br>")
+                break;
+            }
+        }
+        n = 0;
+        while (n % 2 == 0 && n <= 100) {
+            document.write(n + " ");
+            n = n + 2;
+        }
+        document.write("<br><br>")
+        n = 0;
+        x = 11;
+        while (n < 25) {
+            document.write(x * n + " ");
+            n++;
+        }
+        document.write("<br><br>")
+        n = 1;
+        x = 7;
+        while (n <= 10) {
+            document.write(x * n + " ");
+            n++;
+        }
+        var a = [];
+        n = 0;
+        while (n < 10) {
+            a[n] = prompt("Introduce una nota");
+            n++;
+        }
+        document.write("<br><br>")
+        a.forEach(function (element) {
+            if (element >= 5) {
+                document.write(element + " ");
+            }
+        })
+        var b = [];
+        n = 0;
+        var s;
+        while (n < 10) {
+            b[n] = prompt("Introduce una altura");
+            n++;
+        }
+        document.write("<br><br>")
+        for (let i = 0; i < array.length; i++) {
+            const element = b[i];
+            s += element;
+        }
+        document.write();
+    </script>
+</body>
+
+</html>
