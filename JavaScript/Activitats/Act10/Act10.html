@@ -10,7 +10,7 @@
 
 <body>
     <script type="text/javascript">
-        var n = 1;
+        /*        var n = 1;
         while (n <= 50) {
             document.write(n + " ");
             n++;
@@ -61,19 +61,39 @@
                 document.write(element + " ");
             }
         })
-        var b = [];
+        var a = [];
         n = 0;
         var s;
         while (n < 10) {
-            b[n] = prompt("Introduce una altura");
+            a[n] = prompt("Introduce una altura");
             n++;
         }
         document.write("<br><br>")
-        for (let i = 0; i < array.length; i++) {
-            const element = b[i];
+        for (let i = 0; i < a.length; i++) {
+            const element = a[i];
             s += element;
         }
-        document.write();
+        document.write("<br><br>");*/
+        a = [];
+        n = 0;
+        var m = 0;
+        var k = 0;
+        while (n < 5) {
+            a[n] = prompt("Introduce un salario");
+            n++;
+        }
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > 1000) {
+                m++;
+            } else if (a[i] > 500 && a[i] < 1000) {
+                k++;
+            }
+        }
+        for (let i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br><br>");
+        document.write("Hay " + m + " salarios que superan los 1000 euros y " + k + " que estan entre 500 y 1000")
     </script>
 </body>
 

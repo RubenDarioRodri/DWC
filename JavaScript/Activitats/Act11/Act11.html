@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = [];
+        var n = 0;
+        var c = 0;
+        var sum = 0;
+        /* do {
+             n = prompt("Introduce un numero positivo o negativo hasta 9999", );
+             a[c] = parseInt(n);
+             c++;
+             sum = sum + parseInt(n);
+         } while (n < 9999);
+         if (sum > 0) {
+             document.write("Positive <br>");
+             document.write(sum);
+         } else if (sum < 0) {
+             document.write("Negative <br>");
+             document.write(sum);
+         } else {
+             document.write("Zero <br>");
+             document.write(sum);
+         }*/
+        var b = [];
+        do {
+            n = prompt("Introduce una edad");
+            b[sum] = parseInt(n);
+            sum++;
+            n = prompt("Introduce un sexo Hombre/Mujer");
+            b[sum] = n;
+            sum++;
+            n = prompt("Introduce una id que no sea 0");
+            b[sum] = parseInt(n);
+            sum++;
+            a[c] = b;
+            c++;
+            b = [];
+            sum = 0;
+        } while (n != 0);
+        for (let i = 0; i < a.length; i++) {
+            document.write(a[i] + "<br>");
+        }
+    </script>
+</body>
+
+</html>
