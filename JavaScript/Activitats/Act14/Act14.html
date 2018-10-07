@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function Addition(value1, value2) {
+            this.value1 = value1;
+            this.value2 = value2;
+        }
+
+        function LoadValue1() {
+            return value1;
+        }
+
+        function LoadValue2() {
+            return value2;
+        }
+        var a = [];
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        function TopAge(a) {
+            var max = a[0][1];
+            for (let i = 0; i < a.length; i++) {
+                if (a[i][0] > max) {
+                    max == a[i][1];
+                }
+            }
+            return max;
+        }
+
+        function Company(name, workerTopAge) {
+            this.name = name;
+            this.workerTopAge = TopAge(a);
+        }
+    </script>
+</body>
+
+</html>

@@ -14,6 +14,8 @@
         var n = 0;
         var c = 0;
         var sum = 0;
+        var h = 0;
+        var m = 0;
         /* do {
              n = prompt("Introduce un numero positivo o negativo hasta 9999", );
              a[c] = parseInt(n);
@@ -31,23 +33,63 @@
              document.write(sum);
          }*/
         var b = [];
-        do {
-            n = prompt("Introduce una edad");
-            b[sum] = parseInt(n);
-            sum++;
-            n = prompt("Introduce un sexo Hombre/Mujer");
-            b[sum] = n;
-            sum++;
-            n = prompt("Introduce una id que no sea 0");
-            b[sum] = parseInt(n);
-            sum++;
-            a[c] = b;
-            c++;
-            b = [];
-            sum = 0;
-        } while (n != 0);
-        for (let i = 0; i < a.length; i++) {
-            document.write(a[i] + "<br>");
+        var hm = 0;
+        var max = 0;
+        /*      do {
+                  n = prompt("Introduce una edad");
+                  b[sum] = parseInt(n);
+                  sum++;
+                  n = prompt("Introduce un sexo Hombre/Mujer");
+                  b[sum] = n;
+                  sum++;
+                  n = prompt("Introduce una id que no sea 0");
+                  b[sum] = parseInt(n);
+                  sum++;
+                  a[c] = b;
+                  c++;
+                  b = [];
+                  sum = 0;
+              } while (n != 0);
+              for (let i = 0; i < a.length; i++) {
+                  document.write(a[i] + "<br>");
+              }
+              for (let i = 0; i < a.length; i++) {
+                  sum++;
+              }
+              document.write("Hay " + sum + " personas <br>");
+              for (let i = 0; i < a.length; i++) {
+                  if (a[i][2] == "hombre") {
+                      h++;
+                      if (a[i][1] > 18 && a[i][1] < 65) {
+                          hm++;
+                      }
+                  } else if (a[i][2] == "mujer") {
+
+                  } {
+                      m++;
+                  }
+              }
+              document.write("Hay " + h + " hombre y " + m + " mujeres <br>");
+              document.write("Hay " + hm + " hombre en edad de trabajar");
+              for (let i = 0; i < a.length; i++) {
+                  if (a[i][2] == "mujer") {
+                      if (a[i][1] > a[max][1]) {
+                          max = i;
+                      }
+                  }
+
+              }*/
+        var cn;
+        var an;
+        var d;
+        while (condition) {
+            cn = prompt("Introduce el nombre del cliente");
+            an = prompt("Introduce el numero de la cuenta");
+            d = prompt("Introduce la cantidad de dinero");
+            document.write(cn + "is el propietario de " + an + " numero de cuenta con " + d + " €")
+            if (n = -1) {
+                break;
+            }
         }
     </script>
 </body>

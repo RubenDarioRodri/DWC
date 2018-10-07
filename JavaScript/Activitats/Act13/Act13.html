@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function TresNumeros(num1, num2, num3) {
+            if (num1 < num2) {
+                if (num2 < num3) {
+                    return num1;
+                    break;
+                } else if (num1 < num3) {
+                    return num1;
+                    break;
+                }
+                return num3;
+            }
+        }
+
+        function TresNumerosOrd(num1, num2, num3) {
+            if (num1 < num2) {
+                if (num2 < num3) {
+                    return num1 + num2 + num3;
+                    break;
+                } else if (num1 < num3) {
+                    return num1 + num3 + num2;
+                    break;
+                }
+                return num3 + num1 + num2;
+            }
+        }
+
+        function Cuadrado(lado) {
+            var p = lado * 4;
+            return p;
+        }
+
+        function NumeorDigitos(num) {
+            return num.toString().length;
+        }
+
+        function Avarage(num1, num2, num3) {
+            return (num1 + num2 + num3) / 3;
+        }
+
+        function Suma(num1, num2, num3, num4, num5) {
+            return num1 + num2 + num3 + num4 + num5;
+        }
+    </script>
+</body>
+
+</html>
