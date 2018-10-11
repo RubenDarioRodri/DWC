@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function ShowTerm() {
+            var term;
+            term = new Date();
+            if (term.getMonth() > 0 && term.getMonth() < 3) {
+                document.write("La fecha es del primer trimestre del año")
+            } else if (term.getMonth() >= 3 && term.getMonth() < 6) {
+                document.write("La fecha es del segundo trimestre del año")
+            } else if (term.getMonth() >= 6 && term.getMonth() < 9) {
+                document.write("La fecha es del tercer trimestre del año")
+            } else if (term.getMonth() >= 9 && term.getMonth() < 12) {
+                document.write("La fecha es del cuarto trimestre del año")
+            }
+        }
+        ShowTerm();
+    </script>
+</body>
+
+</html>

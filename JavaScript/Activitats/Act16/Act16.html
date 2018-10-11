@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = [];
+        for (let i = 0; i < 10; i++) {
+            a[i] = prompt("Introduce un numero");
+        }
+
+        function Array(a) {
+            var r = 0;
+            for (let i = 0; i < a.length; i++) {
+                r += a[i];
+            }
+            document.write("La suma de todos los elementos es " + r + "<br>");
+            document.write("La media de todos los elementos es " + (r / a.length) + "<br>");
+            r = 0;
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] >= 5) {
+                    r += a[i];
+                }
+            }
+            document.write("La suma de los numeros de mas altos de 5 es igual " + r + "<br>")
+            r = 0;
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] >= 5) {
+                    r++;
+                }
+            }
+            document.write("Numeros mas altos de 5 " + r + "<br>")
+        }
+
+        function Arrays1(a) {
+            var t;
+            t = prompt("Introduce el tamaño del array");
+            var b = [];
+            for (let i = 0; i < 2; i++) {
+                b[i] = prompt("Introduce un numero");
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
