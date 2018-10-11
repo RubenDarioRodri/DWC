@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*  var r = "";
+        var s = 0;
+        do {
+            r = prompt("Introduce un nombre", "");
+            s++;
+        } while (r != "end");
+        document.write("Has introducido " + s + " nombres");*/
+        var b = "";
+        var a = "";
+        var p = 0;
+        b = prompt("Introduce una cadena de texto", "");
+        a = prompt("Introduce la palabra que quieras buscar", "");
+        if (b.indexOf(a) != -1) {
+            document.write(a + " si esta dentro de la cadena de caracteres");
+        } else {
+            document.write(a + " no esta en la cadena de caracteres");
+        }
+    </script>
+</body>
+
+</html>
