@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*     function show() {
+            var x = document.getElementById('numero').value;
+            alert("El cuadrado: " + (x = x * x));
+        }*/
+        function show() {
+            var x = document.getElementById("numero1").value;
+            var y = document.getElementById("numero2").value;
+            if (x > y) {
+                alert("El mas grade es " + x);
+            } else {
+                alert("El mas grade es " + y);
+            }
+        }
+    </script>
+    <form>
+        Introduce un nombre : <input type="text" id="numero1"><br />
+        Introduce un nombre : <input type="text" id="numero2"><br />
+        <input type="button" value="Check" onclick="show()">
+        <!--    Introduce tu numero: <input type="text" id="numero"><br />
+        <input type="button" value="Check" onclick="show()"> -->
+    </form>
+</body>
+
+</html>

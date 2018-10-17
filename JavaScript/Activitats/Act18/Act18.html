@@ -17,16 +17,36 @@
             s++;
         } while (r != "end");
         document.write("Has introducido " + s + " nombres");*/
-        var b = "";
-        var a = "";
-        var p = 0;
-        b = prompt("Introduce una cadena de texto", "");
-        a = prompt("Introduce la palabra que quieras buscar", "");
-        if (b.indexOf(a) != -1) {
-            document.write(a + " si esta dentro de la cadena de caracteres");
-        } else {
-            document.write(a + " no esta en la cadena de caracteres");
+        /*  var b = "";
+          var a = "";
+          var p = 0;
+          b = prompt("Introduce una cadena de texto", "");
+          a = prompt("Introduce la palabra que quieras buscar", "");
+          if (b.indexOf(a) != -1) {
+              document.write(a + " si esta dentro de la cadena de caracteres");
+          } else {
+              document.write(a + " no esta en la cadena de caracteres");
+          }*/
+        var w = "";
+        var e = "";
+
+        /* w = prompt("Introduce una palabra", "");
+         for (let i = w.length; i >= 0; i--) {
+             e += w.charAt(i);
+         }
+         if (e.localeCompare(w) == 0) {
+             document.write("EL String es palindromo")
+         } else {
+             document.write("EL String no es palindromo")
+         }*/
+        e = "No es un correo";
+        w = prompt("Introduce un mail", "");
+        for (let i = 0; i < w.length; i++) {
+            if (w.charAt(i) == "@") {
+                e = "Es un correo";
+            }
         }
+        document.write(e);
     </script>
 </body>
 

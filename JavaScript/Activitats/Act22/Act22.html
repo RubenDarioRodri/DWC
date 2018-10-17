@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    <script type="text/javascript">
+        function price() {
+
+            var sel = document.getElementById('select1');
+            document.getElementById('text3').value = sel.options[sel.selectedIndex].value;
+        }
+    </script>
+
+    <form>
+
+        <select id="select1" onchange="price()">
+            <option value="6 €">Pepperoni</option>
+            <option value="5 €">Quatro Formaggi</option>
+            <option value="4 €">Procciuto</option>
+        </select>
+
+        <br>
+        Selected Value:<input type="text" id="text3"><br>
+
+    </form>
+-->
+    <!--
+<script type="text/javascript">
+    function price() {
+
+        var sel = document.getElementById('select1');
+        var sel1 = document.getElementById('select2');
+        var sel2 = document.getElementById('select3');
+        alert((sel.options[sel.selectedIndex].value + sel1.options[sel1.selectedIndex]
+            .value + sel2.options[sel2.selectedIndex].value));
+    }
+</script>
+
+<form>
+
+    <select id="select1" name="Processor" onchange="price()">
+        <option value="400 €">Intel i3</option>
+        <option value="600 €">Intel i5</option>
+        <option value="800 €">Intel i7</option>
+    </select>
+    <select id="select2" name="Monitor" onchange="price()">
+        <option value="250 €">Samsung 20'</option>
+        <option value="350 €">Samsung 22'</option>
+        <option value="550 €">Samsung 26'</option>
+    </select>
+    <select id="select3" name="Hard Disk" onchange="price()">
+        <option value="300 €">500 Gb</option>
+        <option value="440 €">1 Tb</option>
+        <option value="500 €">3 Tb</option>
+    </select>
+
+    <br>
+    <input type="button" value="Calculated" onclick="price()">
+</form>-->
+    <script type="text/javascript">
+        function price() {
+
+            var sel = document.getElementById('select1');
+            document.getElementById('text3').value = sel.options[sel.selectedIndex].value;
+        }
+    </script>
+
+    <form>
+
+        <select id="select1" onchange="price()">
+            <option value="6 €">Pepperoni</option>
+            <option value="5 €">Quatro Formaggi</option>
+            <option value="4 €">Procciuto</option>
+        </select>
+        <select id="select1" onchange="price()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        Selected Value:<input type="text" id="text3"><br>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function pass() {
+            var p = document.getElementById("contraseña").value;
+            var p1 = document.getElementById("repcontraseña").value;
+            if (p.localeCompare(p1)) {
+                alert("Las contraseñas son iguales")
+            } else {
+                alert("Las contraseñas no son iguales")
+            }
+        }
+    </script>
+    <form>
+        Introduce una contraseña: <input type="password" id="contraseña"><br />
+        Repite la contraseña: <input type="password" id="repcontraseña"><br />
+        <input type="button" value="Check" onclick="pass()">
+    </form>
+</body>
+
+</html>
