@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function show() {
+            if (document.getElementById("nom").value.length > 50) {
+                alert("nolmbre demasiado largo")
+            } else if (document.getElementById("email").value.length > 50) {
+                alert("El correo es demasiado largo")
+            } else if (document.getElementById("com").value.length > 500) {
+                alert("El comentario es demasiado largo")
+            } else {
+                alert("Formulario completado!!")
+            }
+        }
+    </script>
+    <form action="">
+        <textarea name="contact" id="nom" cols="50" rows="1"></textarea>
+        <textarea name="contact" id="email" cols="50" rows="1"></textarea>
+        <textarea name="contact" id="com" cols="50" rows="10"></textarea>
+        <input type="button" value="Check" onclick="show()">
+    </form>
+</body>
+
+</html>

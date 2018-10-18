@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function entrada() {
+            if (document.getElementById("may".checked)) {
+                alert("Puedes entrar al recinto")
+            } else {
+                alert("No puedes entrar al recinto")
+            }
+        }
+    </script>
+    <form action="">
+        <input type="radio" name="Mayor" id="may">Mayor de 18 <br />
+        <input type="radio" name="Menor" id="men">Menor de 18<br />
+        <input type="button" value="Validar Edad" onclick="entrada()">
+    </form>
+</body>
+
+</html>
