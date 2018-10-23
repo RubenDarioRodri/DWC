@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="/JQuery/jquery-3.3.1.min.js"></script>
+    <script src="../jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
     <script>
-$(document).ready(function () {
-    $(".h2").click(function(){
-        
-    }
-})
+        $(function () {
+            $("#p2").click(function () {
+                alert("Has clickado en el segundo paragrafo");
+            });
+        });
     </script>
-    <h2>This is a heading</h2> <button id="h2">Hide Heading</button>
-    <p>This is a paragraph</p> <button id="p1">Hide Paragraph</button>
-    <p>This is another paragraph</p> <button id="p2">Hide Paragraph</button>
+    <h1>Principal</h1>
+    <p id="p1">Primer paragrafo</p>
+    <p id="p2">Segundo paragrafo</p>
 </body>
 
 </html>
