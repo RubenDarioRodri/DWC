@@ -10,7 +10,39 @@
 
 <body>
     <script type="text/javascript">
+        function empty(control) {
+
+            control.value = '';
+
+        }
+
+        function checkEntry(control) {
+
+            if (control.value == '') {
+                alert('You must enter data!');
+            }
+        }
+
+        function checkPass(control) {
+            if (control.value.length < 7) {
+                alert("The password must be longer than 7 character")
+            } else {
+                alert("Your password is safety")
+            }
+        }
     </script>
+
+    <form>
+
+        <input type="text" id="username" onFocus="empty(this)" onBlur="checkEntry(this)" value="user name"><br>
+
+        <input type="text" id="pass" onFocus="empty(this)" onBlur="checkEntry(this)" value="password">
+
+        <br>
+
+        <input type="button" value="Confirm" onclick="checkPass(pass)">
+
+    </form>
 </body>
 
 </html>

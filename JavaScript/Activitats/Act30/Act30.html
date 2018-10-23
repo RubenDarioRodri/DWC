@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function random() {
+            if (window.confirm("Quieres ir a una pagina aleatoria")) {
+                var r = Math.round(Math.random() * 2);
+                if (r == 0) {
+                    window.location = "https://www.google.com";
+                }
+                if (r == 1) {
+                    window.location = "https://es.yahoo.com";
+                }
+                if (r == 2) {
+                    window.location = "https://www.bing.com/?setlang=es";
+                }
+            } else {
+                window.alert("No hay Problema")
+            }
+        }
+    </script>
+    <a href="javascript:random()">Link externo</a>
+</body>
+
+</html>
