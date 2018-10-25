@@ -8,20 +8,23 @@
     <title>Document</title>
     <script src="../../jquery-3.3.1.min.js"></script>
     <style>
-        div {
-            height: 200px;
-            widows: 200px;
-        }
+        input{
+        color: blue;
+    }
     </style>
 </head>
 
 <body>
     <script>
-        var x;
-        x = $(document);
-        
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).attr("style","color:red")
+            })
+        })
     </script>
-    <div>Mega Div</div>
+    <input type="text" name="Texto Ejemplo" id="">
+    <input type="text" name="Texto Ejemplo" id="">
+
 </body>
 
 </html>

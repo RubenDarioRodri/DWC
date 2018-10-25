@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            var c = 0;
+            $(".plus").click(function () {
+                var caja = $("<div/>", {
+                    id: "div_" + c
+                })
+                var cajaId = "#div_" + c;
+                var inp = $("<input/>", {
+                    type: "text",
+                    id: "input_" + c,
+                    value: c
+                });
+                var b = $("<button/>", {
+                    text: "Borrar",
+                    id: "boton_" + c,
+                    click: function () {
+                        $(cajaId).remove();
+                    }
+                })
+                var br = $("<br/>");
+                caja.append(inp);
+                caja.append(b);
+                caja.append(br);
+                $("form").append(caja);
+                c++;
+            })
+            $(".reset").click(function () {
+                $("form").empty();
+                c = 0;
+            })
+        })
+    </script>
+    <h1>Formulario</h1>
+    <form action=""></form>
+    <button class="plus">Añadir Elemento</button>
+    <button class="reset">Borrar Todos</button>
+</body>
+
+</html>

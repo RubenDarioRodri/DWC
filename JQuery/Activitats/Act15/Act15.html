@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+    <style>
+        div {
+            color: #aa0;
+            background-color: #ff0;
+            position: absolute;
+            text-align: center;
+            left: 40px;
+            top: 30px;
+            width: 800px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            if ($("div").width() == "250" ) {
+                $(this).css("width", "800");
+                    $(this).css("height", "70");
+            } else {
+                $("div").dblclick(function () {
+                    $(this).css("width", "250");
+                    $(this).css("height", "250");
+                })
+            }
+        })
+    </script>
+    <div>Resize the div</div>
+</body>
+
+</html>

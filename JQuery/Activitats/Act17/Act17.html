@@ -7,21 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="../../jquery-3.3.1.min.js"></script>
-    <style>
-        div {
-            height: 200px;
-            widows: 200px;
-        }
-    </style>
 </head>
 
 <body>
     <script>
-        var x;
-        x = $(document);
-        
+        $(document).ready(function(){
+            $("input").blur(function(){
+                if ($(this).text()=="") {
+                    alert("Tienes que rellenar el texto")
+                }
+            })
+        })
     </script>
-    <div>Mega Div</div>
+    <input type="text" name="Texto de Ejemplo" id="">
 </body>
 
 </html>

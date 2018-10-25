@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+    <style>
+        #div1 {
+            background-color: #ffffcc;
+            font-family: verdana;
+            font-size: 14px;
+            border-top-width: 1px;
+            border-right-width: 3px;
+            border-bottom-width: 3px;
+            border-left-width: 1px;
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: dotted;
+            border-top-color: #ffaa00;
+            border-right-color: #ff0000;
+            border-bottom-color: #ff0000;
+            border-left-color: #ffaa00;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".square").click(function () {
+                $(this).fadeOut("slow");
+                $(".cuadrado").fadeIn("slow");
+            })
+        })
+    </script>
+    <div id="div1" class="square">
+        <p>Paragraph 01.</p>
+        <p>Paragraph 02.</p>
+    </div>
+    <div id="div1" class="cuadrado" style="display:none">
+        <p>Paragraph 01.</p>
+        <p>Paragraph 02.</p>
+    </div>
+</body>
+
+</html>

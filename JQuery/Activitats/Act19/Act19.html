@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                $(this).hide("slow", function () {
+                    $("#hidden").attr("style", "dsiplay:inline")
+                });
+
+            })
+        })
+    </script>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam harum fugiat, molestias commodi quod
+            recusandae quos, voluptas doloribus provident veniam, eligendi beatae. Reprehenderit ad incidunt tempora
+            unde quaerat quis ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam harum fugiat, molestias commodi quod
+            recusandae quos, voluptas doloribus provident veniam, eligendi beatae. Reprehenderit ad incidunt tempora
+            unde quaerat quis ipsam.</p>
+    </div>
+    <div id="hidden" style="display:none">
+        <p>No es Lorem ipsum</p>
+    </div>
+</body>
+
+</html>
