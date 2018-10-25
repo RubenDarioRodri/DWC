@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".google").click(function () {
+                $("a").attr("href", "https://www.google.es/");
+            });
+            $(".youtube").click(function () {
+                $("a").attr("href", "https://www.youtube.com/?hl=es&gl=ES");
+            });
+            $(".amazon").click(function () {
+                $("a").attr("href", "https://www.amazon.es/");
+            });
+        });
+    </script>
+    <p><a href="">Link</a></p>
+    <button class="google">Google</button>
+    <button class="youtube">Youtube</button>
+    <button class="amazon">Amazon</button>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function setColorRandom() {
+            var c = "0123456789ABCDEF";
+            var r = "#";
+            for (let i = 0; i < 6; i++) {
+                r += c.charAt(Math.floor(Math.random() * 16));
+            }
+            return r;
+        }
+        $(document).ready(function () {
+            $("td").mouseover(function () {
+                $(this).css("background-color", setColorRandom())
+            })
+            $("td").mouseout(function () {
+                $(this).css("background-color", "#fff")
+            })
+        })
+    </script>
+    <table border="1">
+        <tr>
+            <td>Item </td>
+            <td>Item </td>
+        </tr>
+        <tr>
+            <td>Item </td>
+            <td>Item </td>
+        </tr>
+    </table>
+</body>
+
+</html>

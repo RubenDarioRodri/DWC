@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $(".sm").click(function () {
+                $(".odd").css("font-size", "10px");
+            })
+            $(".med").click(function () {
+                $(".odd").css("font-size", "15px");
+            })
+            $(".big").click(function () {
+                $(".odd").css("font-size", "20px");
+            })
+        })
+    </script>
+    <h1>Heading 1</h1>
+    <p class="odd">Paragraph 1</p>
+    <h1>Heading 2</h1>
+    <p>Paragraph 2</p>
+    <h1>Heading 3</h1>
+    <p class="odd">Paragraph 3</p>
+    <h1>Heading 4</h1>
+    <p>Paragraph 4</p>
+    <h1>Heading 5</h1>
+    <p class="odd">Paragraph 5</p>
+    <button class="sm">Small</button>
+    <button class="med">Medium</button>
+    <button class="big">Big</button>
+</body>
+
+</html>
