@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("p").hide();
+            })
+            $("#b2").click(function () {
+                $("#p1").hide();
+            })
+            $("#b3").click(function () {
+                $("#p2").hide();
+            })
+            $("#b4").click(function () {
+                $("p").show();
+            })
+        })
+    </script>
+    <h2>This is a heading</h2>
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    <button id="b1">HIDE P</button>
+    <button id="b2">HIDE P1</button>
+    <button id="b3">HIDE P2</button>
+    <button id="b4">SHOW P</button>
+</body>
+
+</html>
