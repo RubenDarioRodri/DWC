@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Select Dinamico Dependiente</title>
+</head>
+<script>
+    $(document).ready(function () {
+        $("#reserva").prop("disabled", true);
+        $("#estado").change(function () {
+            var idEstado = $("#estado").val();
+            $("#reserva").prop("disabled", false);
+            $("#reserva").empty();
+            loadReserva(idEstado);
+        });
+
+        function loadEstado() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    $("#json1").html(this.responseText);
+                    var estado = JSON.parse(this.responseText);
+                    for (i in estado) {
+                        var idEstado = estado[i].idEstado;
+                        var nombreEstado = estado[i].nombre;
+                        var item = $("<option/>", {
+                            value: idEstado,
+                            text: nombreEstado
+                        });
+                        $("#estado").append(item);
+                    }
+                }
+            };
+            xhttp.open("GET", "Estado.php", true);
+            xhttp.send();
+        }
+
+        function loadReserva(idEstado) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    $("#json2").html(this.responseText);
+                    var reserva = JSON.parse(this.responseText);
+                    var item0 = $("<option/>", {
+                        value: "0",
+                        text: "Selecciona"
+                    });
+                    $("#reserva").append(item0);
+                    for (i in reserva) {
+                        var idReserva = reserva[i].id;
+                        var fechaReserva = reserva[i].fechaReserva;
+                        var item = $("<option/>", {
+                            value: idReserva,
+                            text: fechaReserva
+                        });
+                        $("#reserva").append(item);
+                    }
+                }
+            };
+            xhttp.open("GET", "Reserva.php?estado=" + idEstado, true);
+            xhttp.send();
+        }
+        loadEstado();
+    });
+</script>
+
+<body>
+    <div class="container">
+        <h1>Selects Dependientes</h1>
+        <form action="">
+            <div class="input-group">
+                <label for="formGroup">Estado</label>
+                <select name="estado" id="estado" class="custom-select">
+                    <option value="0">-- Select --</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="formGroup">Reserva</label>
+                <select name="reserva" id="reserva" class="custom-select">
+                    <option value="0">-- Select --</option>
+                </select>
+            </div>
+        </form>
+        <br>
+
+        <h4>Contingut del fitxer JSON 1:</h4>
+        <p id="json1"></p>
+        <h4>Contingut del fitxer JSON 2:</h4>
+        <p id="json2"></p>
+    </div>
+</body>
+
+</html>
